@@ -25,11 +25,18 @@ void debug_records(); //for debug
 int main(){
     s_init();
     int menu;
+<<<<<<< HEAD
     printf("\nLoad schedule data to start => choose Menu 16 \n");
     printf("Create new schedule data without load file => choose Menu 1 \n\n");
     while(1){
 	printf("-------------------------------Menu--------------------------------\n");
         printf("1.Create \t\t2.Read \t\t\t3.Update \t\n4.Delete \t\t5.Update(by major) \t6.Delete(by diff) \t\n7.List \t\t\t8.Search(name) \t\t9.Search(major) \t\n10.Search(code) \t11.Search(diff) \t12.Sort(score) \t\n13.Read(data,report) \t14.Save(update file) \t15.Debug \t\t\n16.Load file \t\t0.Quit \n-------------------------------------------------------------------\nSelect Menu > ");
+=======
+    printf("Load schedule data to start => choose Menu 16 \n");
+    printf("Create new schedule data without load file => choose Menu 1 \n");
+    while(1){
+        printf("\n Menu : 1.Create 2.Read 3.Update 4.Delete 5.Update(by major) 6.Delete(by diff) 7.List 8.Search(name) 9.Search(major) 10.Search(code) 11.Search(diff) 12.Sort(score) 13.Read(data,report) 14.Save(update file) 15.Debug 16.Load file 0.Quit > ");
+>>>>>>> 2be1bf9750db0820fcb1067d991272783a31609b
         scanf("%d", &menu);
         	printf("\n");
         	switch(menu){
