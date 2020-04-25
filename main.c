@@ -22,7 +22,6 @@ void save_file(); //과목 스케줄의 데이터 파일 저장하기
 void save_report(); //과목 스케줄의 데이터파일 보고서로 저장하기
 void debug_records(); //for debug
 void load_file();
-
 int main(){
     s_init();
     int menu;
@@ -108,8 +107,8 @@ void create_sche(){
     }
     printf("Professor name (in English,no space)> ");
     scanf("%s",prof);
-    printf("If file loads, input code number above 50\n");
-    printf("If no file loads, input code number above 0\n");
+    printf("//If file loads, input code number above 50\n");
+    printf("//If no file loads, input code number above 0\n");
     printf("Code number (integer number) > ");
     scanf("%d",&code);
     if(s_search_by_code(code)) {

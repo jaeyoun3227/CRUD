@@ -20,7 +20,7 @@ int s_first_available(){
 
 int s_count(){
 #ifdef DEBUG
-    printf("[DEBUG]total schedules %d\n",count);
+    printf("[DEBUG] total schedules %d\n",count);
 #endif
     return count;
 }
@@ -28,7 +28,7 @@ int s_count(){
 void s_create(char* n, char* p, int c, int m, char* h,int d,int di,int sc){
     int index = s_first_available();
 #ifdef DEBUG
-    printf("[DEBUG]first available index %d\n",index);
+    printf("[DEBUG] first available index %d\n",index);
 #endif
     schedule[index] = (Sche*)malloc(sizeof(Sche));
     Sche* s = schedule[index];
@@ -42,7 +42,7 @@ void s_create(char* n, char* p, int c, int m, char* h,int d,int di,int sc){
     s->score = sc;
     count++;
 #ifdef DEBUG
-    printf("[DEBUG]total %d schedules\n",s_count());
+    printf("[DEBUG] total %d schedules\n",s_count());
 #endif
 }
 
@@ -50,7 +50,7 @@ Sche* s_search_by_name(char* n){
     for(int i=0; i<MAX_SUBJECTS; i++){
         if((schedule[i]!=NULL) && strcmp(schedule[i]->name, n)==0) {
 #ifdef DEBUG    
-		printf("[DEBUG]search_name %s",schedule[i]->name);
+		printf("[DEBUG] search_name %s",schedule[i]->name);
 #endif
 		return schedule[i];
         }
@@ -82,13 +82,12 @@ Sche* s_search_by_diff(int di){
    return NULL;
 }
 
-
 void s_update(Sche* s, char* h,int d,int sc){
     strcpy(s->hw, h);
     s->due = d;
     s->score=sc;
 #ifdef DEBUG
-    printf("[DEBUG]due_score %d %d\n",s->due,s->score);
+    printf("[DEBUG] due_score %d %d\n",s->due,s->score);
 #endif
 }
 
@@ -106,13 +105,14 @@ void s_delete(Sche* s){
     for(i=index+1;i<MAX_SUBJECTS;i++)
 	schedule[i-1]=schedule[i];
 }
+
 char* s_to_string(Sche* s){
     static char str[80];
 #ifdef DEBUG
-    printf("[DEBUG]name_prof %s %s\n",s->name,s->prof);
-    printf("[DEBUG]code_major %d %d\n",s->code,s->major);
-    printf("[DEBUG]hw_due %s %d\n",s->hw,s->due);
-    printf("[DEBUG]diff_score %d %d\n",s->diff,s->score);
+    printf("[DEBUG] name_prof %s %s\n",s->name,s->prof);
+    printf("[DEBUG] code_major %d %d\n",s->code,s->major);
+    printf("[DEBUG] hw_due %s %d\n",s->hw,s->due);
+    printf("[DEBUG] diff_score %d %d\n",s->diff,s->score);
 #endif
     sprintf(str, "[%s] %s / code num: %d / major num: %d / hw: %s / due days: %d / difficulty: %d / score: %d", s->name, s->prof, s->code, s->major, s->hw, s->due,s->diff,s->score);
     return str;
@@ -122,7 +122,7 @@ void s_get_all(Sche* a[]){
     int i, c=0;
     for(i=0; i<MAX_SUBJECTS; i++){
 #ifdef DEBUG
-	printf("[DEBUG]MAX_SUBJECTS %d\n",MAX_SUBJECTS);
+	printf("[DEBUG] MAX_SUBJECTS %d\n",MAX_SUBJECTS);
 #endif
         if(schedule[i]!=NULL){
             a[c]=schedule[i];
@@ -164,13 +164,13 @@ int s_getdue(Sche* s) {
 }
 int s_getdiff(Sche *s) {
 #ifdef DEBUG
-    printf("[DEBUG]diff %d\n",s->diff);
+    printf("[DEBUG] diff %d\n",s->diff);
 #endif
     return s->diff;
 }
 int s_getscore(Sche *s) {
 #ifdef DEBUG
-    printf("[DEBUG]diff %d\n",s->score);
+    printf("[DEBUG] score %d\n",s->score);
 #endif
     return s->score;
 }
@@ -180,7 +180,7 @@ int s_get_all_by_name(Sche* a[], char* n){
     int i, c=0;
     for(i=0; i<MAX_SUBJECTS; i++){
 #ifdef DEBUG
-        printf("[DEBUG]get_name %s\n",schedule[i]->name);
+        printf("[DEBUG] get_name %s\n",schedule[i]->name);
 #endif
         if((schedule[i]!=NULL) && strcmp(schedule[i]->name, n)==0){
             a[c]=schedule[i];
@@ -238,10 +238,9 @@ void s_init(){
 char* s_to_string_save(Sche* s){
     static char str[80];
 #ifdef DEBUG
-    printf("[DEBUG]name_prof_code_major %s %s %d %d\n",s->name,s->prof,s->code,s->major);
-    printf("[DEBUG]hw_due_diff_score %s %d %d %d\n",s->hw,s->due,s->diff,s->score);
+    printf("[DEBUG] name_prof_code_major %s %s %d %d\n",s->name,s->prof,s->code,s->major);
+    printf("[DEBUG] hw_due_diff_score %s %d %d %d\n",s->hw,s->due,s->diff,s->score);
 #endif
     sprintf(str, "%s %s %d %d %s %d %d %d", s->name, s->prof, s->code, s->major, s->hw, s->due,s->diff,s->score);
     return str;
 }
-
