@@ -22,6 +22,7 @@ void save_file(); //과목 스케줄의 데이터 파일 저장하기
 void save_report(); //과목 스케줄의 데이터파일 보고서로 저장하기
 void debug_records(); //for debug
 void load_file();
+
 int main(){
     s_init();
     int menu;
