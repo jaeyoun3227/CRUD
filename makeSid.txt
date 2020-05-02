@@ -1,0 +1,4 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out
+Entry year? 1997
+Your ID : 19703334
+
