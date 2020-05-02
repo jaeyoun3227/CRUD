@@ -1,0 +1,51 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out word1.txt
+402 words read!!
+Menu : 1.list 2. O/X 3. Test A 4. Save 0.exit > 1
+1 abate -> 누그러지다, 약해지다, 감소하다
+2 abolish -> 폐지하다
+3 access -> 이용권한, 접근; 통로
+4 accessible -> 출입할 수 있는; 이용할 수 있는
+5 accidentally -> 우연히, 뜻하지 않게
+6 accomplish -> 성취하다
+7 accordance -> 일치,조화
+8 according to -> ~에 따라
+9 accuse -> 비난하다, 고소하다
+10 accustomed -> ~에 익숙한
+11 acquaint -> ~에게 ~을 숙지시키다, 잘 알게 하다
+12 adhere -> 고수하다, 지키다
+13 adjust -> 적응하다
+14 admission -> 입장
+15 adopt -> 채택하다
+Print more? (1.Yes, 0.No) > 0
+Menu : 1.list 2. O/X 3. Test A 4. Save 0.exit > 2
+O/X 문제 : volatile - (가격 등이)심하게 변동하는
+당신의 답은? (1-O, 0-X) >1
+ >> 정답!
+--> 계속? (1-Yes, 0-No) >0
+Menu : 1.list 2. O/X 3. Test A 4. Save 0.exit > 3
+객관식 문제 : 다음 중 local의 뜻은?
+(1) 성취하다
+(2) 지방의, 고장의
+(3) 노력
+(4) 절판되어
+당신의 답은? >2
+ >> 정답!
+--> 계속? (1-Yes, 0-No) >0
+Menu : 1.list 2. O/X 3. Test A 4. Save 0.exit > 4
+몇 문제씩 출제할까요?(1~10) >1
+다음 단어의 뜻을 찾으시오.
+
+문제 1. carefully
+(1) ~에 익숙한
+(2) 끊임없는, 계속되는
+(3) 불화, 마찰
+(4) 주의깊에, 신중히
+다음 뜻에 해당하는 단어를 찾으시오.
+
+문제 2. 상황할 수 있는, 되찾을 수 있는
+(1) reflective
+(2) redeemable
+(3) form
+(4) depression
+정답 - 1.(4) 2.(2)
+
