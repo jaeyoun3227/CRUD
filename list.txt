@@ -1,0 +1,27 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out 10
+
+
+ *****MAIN MENU *****
+ 1:  Create a list
+ 2:  Display the list
+ 3:  Add a node at the beginning
+ 4:  Add a node at the end
+ 5:  Add a node before a given node
+ 6:  Add a node after a given node
+ 7:  Delete a node from the beginning
+ 8:  Delete a node from the end
+ 9:  Delete a given node
+ 10: Delete a node after a given node
+ 11: Delete the entire list
+ 12: Sort the list
+ 13: EXIT
+
+ Enter your option : 1
+
+ Enter -1 to end
+ Enter the data : 10
+
+ Enter the data : -1
+
+ LINKED LIST CREATED
+
