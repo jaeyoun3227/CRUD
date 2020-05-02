@@ -1,0 +1,8 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out
+[IN] Enter car number >0981
+[OUT] Enter car number >0981
+Parking Info : Car #0981
+IN - 13:13:40
+OUT - 13:13:43
+Duration : 3 seconds
+
