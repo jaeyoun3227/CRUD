@@ -1,0 +1,18 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out sample.txt
+I:      36
+It:     11
+a:      24
+and:    25
+in:     13
+is:     26
+it:     20
+of:     20
+the:    45
+to:     39
+that:   17
+was:    23
+with:   11
+you:    23
+your:   11
+Most used word : the
+

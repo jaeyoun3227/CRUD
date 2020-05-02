@@ -1,0 +1,8 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out
+Enter a line >> hello world Handong yena
+total 4 Words
+hello world Handong yena
+world Handong yena hello
+Handong yena hello world
+yena hello world Handong
+

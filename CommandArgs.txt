@@ -1,0 +1,7 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out 13
+argc : 2
+argv[0] : ./a.out
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out 13 12
+argc : 3
+argv[0] : ./a.out
+

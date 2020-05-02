@@ -1,0 +1,11 @@
+s21600453@peace:~/oss2020/project/C_camp$ ./a.out
+Menu : 1.Enter 2.Exit 3.List 4.Amount >> 1
+[IN] Enter car number >0981
+Menu : 1.Enter 2.Exit 3.List 4.Amount >> 2
+[OUT] Enter car number >0981
+Menu : 1.Enter 2.Exit 3.List 4.Amount >> 3
+No Car#     IN     OUT    time  fee
+100 0981 13:04:18 13:04:24 6 500
+Menu : 1.Enter 2.Exit 3.List 4.Amount >> 4
+Total 1 cars, 500won
+
