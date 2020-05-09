@@ -1,14 +1,12 @@
-#CRUD project#
+# CRUD project #
 
 Creating, reading, updating, deleting subject schedules
 
-*main.c : 애플리케이션 구현
+* main.c : 애플리케이션 구현 
+* schedule.c : 원형 함수 정의
+* schedule.h : 원형 함수 선언 
 
-*schedule.c : 원형 함수 정의
-
-*schedule.h : 원형 함수 선언 
-
-##CRUD menu##
+## CRUD menu ##
 
 1. create_sche : 과목별 스케줄 생성
 2. read_sche : 과목별 스케줄 출력
@@ -29,24 +27,24 @@ Creating, reading, updating, deleting subject schedules
 17. debug records : 디버깅
 18. load_file : 과목 스케줄 데이터 가져와서 로딩하기 
 
-##Makefile##
+## Makefile ##
 
-CC = gcc
-CFLAGS = -g -Wall
-TARGETS = main
-OBJECTS = main.c schedule.o
-.SUFFIXES = .c .o
-main_debug : $(TARGETS)
-main_debug : DEBUGOPTION = -DDEBUG
+        CC = gcc
+        CFLAGS = -g -Wall
+        TARGETS = main
+        OBJECTS = main.c schedule.o
+        .SUFFIXES = .c .o
+        main_debug : $(TARGETS)
+        main_debug : DEBUGOPTION = -DDEBUG
 
-$(TARGETS) : $(OBJECTS)
-        $(CC) $(CFLAGS) $(DEBUGOPTION) -o $@ $^
+        $(TARGETS) : $(OBJECTS)
+                $(CC) $(CFLAGS) $(DEBUGOPTION) -o $@ $^
 
-.c.o :
-        $(CC) $(CFLAGS) $(DEBUGOPTION) -c $<
+        .c.o :
+                $(CC) $(CFLAGS) $(DEBUGOPTION) -c $<
 
-clean :
-        rm *.o $(TARGETS)
+        clean :
+                rm *.o $(TARGETS)
 
 Source code 
 
