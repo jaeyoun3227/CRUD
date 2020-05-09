@@ -1,8 +1,11 @@
 #CRUD project#
+
 Creating, reading, updating, deleting subject schedules
+
 *main.c : 애플리케이션 구현
 *schedule.c : 원형 함수 정의
 *schedule.h : 원형 함수 선언 
+
 ##CRUD menu##
 
 1. create_sche : 과목별 스케줄 생성
